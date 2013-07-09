@@ -8,43 +8,42 @@
 {% block submenu_features %}active{% endblock %}
 
 {% block lead %}
-Alle Funktionen von OpenSlides im Überblick.
+{% trans "Alle Funktionen von OpenSlides im Überblick." %}
 {% endblock %}
 
 {% block content %}
 <ul class="pager">
     <li>
-    <a href="#projector">Projektor</a>
+    <a href="#projector">{% trans "Projektor" %}</a>
     </li>
     <li>
-    <a href="#agenda">Tagesordnung</a>
+    <a href="#agenda">{% trans "Tagesordnung" %}</a>
     </li>
     <li>
-    <a href="#applications">Anträge</a>
+    <a href="#applications">{% trans "Anträge" %}</a>
     </li>
     <li>
-    <a href="#elections">Wahlen</a>
+    <a href="#elections">{% trans "Wahlen" %}</a>
     </li>
     <li>
-    <a href="#participants">Teilnehmer</a>
+    <a href="#participants">{% trans "Teilnehmer/innen" %}</a>
     </li>
     <li>
-    <a href="#general">Allgemein</a>
+    <a href="#general">{% trans "Allgemein" %}</a>
     </li>
     <li>
-    <a href="#future">Ausblick</a>
+    <a href="#future">{% trans "Ausblick" %}</a>
     </li>
 </ul>
 
 
-  <a name="projector"></a>
-  <div class="page-header">
-    <h1>Projektor</h1>
-  </div>
-
-  <div class="row greytext">
+<a name="projector"></a>
+<div class="page-header">
+    <h1>{% trans "Projektor" %}</h1>
+</div>
+<div class="row greytext">
     <div class="span4">
-        <h5>Projektor aktualisiert sich automatisch</h5>
+        <h5>{% trans "Projektor aktualisiert sich automatisch" %}</h5>
         <p>Änderung können vorgenommen werden ohne den Präsentationsmodus zu beenden.
         Eine verkleinerte Projektor-Live-Ansicht zeigt immer die aktuell ausgewählte
         Folie an.
@@ -52,8 +51,29 @@ Alle Funktionen von OpenSlides im Überblick.
         <p class="thumbnail">
         <img alt="" src="/static/img/features/dashboard-projector-widget_de.png">
         </p>
-
-        <h5>Eigene Folien erstellen</h5>
+    </div>
+    <div class="span4">
+        <h5>{% trans "Dashboard mit Widgets" %}</h5>
+        <p>Alle Inhalte in OpenSlides sind als "Folie" projizierbar und 
+        werden auf dem Dashboard übersichtlich in zusammenklappbaren and fixierbaren
+        Widgets aufgelistet. </p>
+        <p class="thumbnail">
+        <img alt="" src="/static/img/features/dashboard_de.png">
+        </p>
+    </div>
+    <div class="span4">
+        <h5>{% trans "Countdown zur Redezeitbegrenzung" %}</h5>
+        <p>Zur Brenzung der Redezeit lässt sich jederzeit ein konfigurierbarer Countdown
+        einblenden. Zusätzlich ist stets die aktuelle Uhrzeit auf der Projektoransicht
+        sichtbar.</p>
+        <p class="thumbnail">
+        <img alt="" src="/static/img/features/projector-countdown_de.png">
+        </p>
+    </div>
+</div>
+<div class="row greytext">
+    <div class="span4">
+        <h5>{% trans "Eigene Folien erstellen" %}</h5>
         <p>Benutzerdefinierte Folien eigenen sich gut für organisatorische Dinge abseits der
         formalen Tagesordnung.</p>
         <p class="thumbnail">
@@ -61,15 +81,7 @@ Alle Funktionen von OpenSlides im Überblick.
         </p>
     </div>
     <div class="span4">
-        <h5>Dashboard mit Widgets</h5>
-        <p>Alle Inhalte in OpenSlides sind als "Folie" projizierbar und 
-        werden auf dem Dashboard übersichtlich in zusammenklappbaren and fixierbaren
-        Widgets aufgelistet. </p>
-        <p class="thumbnail">
-        <img alt="" src="/static/img/features/dashboard_de.png">
-        </p>
-
-        <h5>Widget Rednerliste</h5>
+        <h5>{% trans "Widget Rednerliste" %}</h5>
         <p>Jeder Teilnehmer kann sich selbst auf die Rednerliste setzen und zur
         aktuellen Rednerliste springen.</p>
         <p class="thumbnail">
@@ -77,80 +89,59 @@ Alle Funktionen von OpenSlides im Überblick.
         </p>
     </div>
     <div class="span4">
-        <h5>Countdown zur Redezeitbegrenzung</h5>
-        <p>Zur Brenzung der Redezeit lässt sich jederzeit ein konfigurierbarer Countdown
-        einblenden. Zusätzlich ist stets die aktuelle Uhrzeit auf der Projektoransicht
-        sichtbar.</p>
-        <p class="thumbnail">
-        <img alt="" src="/static/img/features/projector-countdown_de.png">
-        </p>
-
-        <h5>Überblendungen</h5>
+        <h5>{% trans "Überblendungen" %}</h5>
         <p>Kurze Meldungen lassen sich auf Folien überblenden. Die aktuelle Folie wird
         dabei nicht verlassen. </p>
         <p class="thumbnail">
         <img alt="" src="/static/img/features/projector-overlay_de.png">
         </p>
     </div>
-  </div>
+</div>
 
-  <a name="agenda"></a>
-  <br>
-  <br>
-  <br>
-  <div class="page-header">
-    <h1>Tagesordnung</h1>
+
+<a name="agenda"></a>
+<br><br><br>
+<div class="page-header">
+    <h1>{% trans "Tagesordnung" %}</h1>
     <ul class="pager">
         <li class="next"><a href="#">&uarr; {% trans "Nach oben" %}</a></li>
     </ul>
-  </div>
-
-  <div class="row">
+</div>
+<div class="row greytext">
     <div class="span4">
-      <h3>Tagesordnung verwalten</h3>
-      <p>Jeder Tagesordungseintrag besteht aus einem Titel sowie - optional - aus einem
-      zusätzlichen Text und einem internen Kommentar (z.B. für Regieanweisungen der
-      Versammlungsleitung). Im Text können HTML-Tags verwendet werden, um z.B. Bilder oder Videos
-      einzubetten.</p>
+        <h5>Tagesordnung verwalten</h5>
+        <p>Verwalten Sie Ihre Tagesordung komfortabel mit OpenSlides.
+        Einträge lassen sich einfach per Drag&Drop verschieben. Eine hierarchische 
+        Liste mit Unterpunkten ist möglich.
+        </p>
+        <p class="thumbnail">
+        <img alt="" src="/static/img/features/agenda-list_de.png">
+        </p>
 
-      <h3>Am Projektor anzeigen</h3>
-      <p>Jeder Tagesordnungseintrag lässt sich per Mausklick auf dem Projektor anzeigen.
-      Egal in welcher Reihenfolge!</p>
-
-      <h3>Tagesordnung sortieren</h3>
-      <p>Einträge lassen sich in der Tagesordnung frei per Drag&Drop sortieren
-      - mit beliebig vielen Unterpunkten.</p>
-    </div>
-    <div class="span4">
-      <h3>Erledigt markieren</h3>
+      <h5>Erledigt markieren</h5>
       <p>Abgeschlossene Tagesordnungspunkte können als erledigt markiert und
       anschließend zur besseren Übersicht ausgeblendet werden.</p>
-
-      <h3>PDF</h3>
-      <p>Die vollständige Tagesordnung lässt sich als PDF erzeugen.</p>
-
-      <ul class="thumbnails">
-        <li class="span2">
-          <a class="thumbnail" href="/static/img/agenda-new-item_{{LANGUAGE_CODE}}.png">
-            <img alt="" src="/static/img/agenda-new-item_{{LANGUAGE_CODE}}.png">
-          </a>
-        </li>
-        <li class="span2">
-          <a class="thumbnail" href="/static/img/agenda-pdf_{{LANGUAGE_CODE}}.png">
-            <img alt="" src="/static/img/agenda-pdf_{{LANGUAGE_CODE}}.png">
-          </a>
-        </li>
-      </ul>
+    </div>
+    <div class="span4">
+        <h5>Einträge projizieren</h5>
+        <p>Jeder Tagesordnungseintrag lässt sich per Mausklick auf dem Projektor anzeigen.
+        Egal in welcher Reihenfolge! Auch Rednerlisten lassen sich so projizieren.</p>
+        <p class="thumbnail">
+        <img alt="" src="/static/img/features/agenda-projector_de.png">
+        </p>
 
     </div>
     <div class="span4">
-    <ul class="thumbnails">
-        <li class="span4">
-          <a class="thumbnail" href="/static/img/agenda_{{LANGUAGE_CODE}}.png">
-            <img alt="" src="/static/img/agenda_{{LANGUAGE_CODE}}.png">
-          </a>
-        </li>
-      </ul>
+        <h5>Rednerliste</h5>
+        <p>Jeder Tagesordnungseintrag enthält eine unabhängige Rednerliste,
+        die von der Versammlungsleitung verwaltet wird. Jeder Teilnehmer kann sich selbst
+        auf diese Liste setzen.</p>
+        <p class="thumbnail">
+        <img alt="" src="/static/img/features/agenda-speakers-list_de.png">
+        </p>
+      <h5>PDF</h5>
+      <p>Die vollständige Tagesordnung lässt sich auch als PDF anzeigen.</p>
+    
     </div>
   </div>
 

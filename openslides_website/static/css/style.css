@@ -199,6 +199,9 @@ form .error input, form .error textarea {
 .box ul li {
     list-style-image: url("/static/img/icons/ok.png");
 }
+.well h2, .well h3 {
+    margin-top: 0px;
+}
 
 /* Home */
 .carousel-indicators li {
@@ -258,5 +261,8 @@ h3 {
     font-size: 11px;
 }
 .page-header .pager:before, .page-header .pager:after {
-    display: inline !important;
+    margin-top: -60px;
+}
+.page-header h1 {
+    margin-bottom: 0px;
 }

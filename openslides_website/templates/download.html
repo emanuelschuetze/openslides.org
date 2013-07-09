@@ -40,7 +40,7 @@
       <p>
       {% with version="1.4" %}
       {% blocktrans %}Alternativ kann auch das aktuelle 
-      <a href="http://files.openslides.org/openslides-{{version}}.tar.gz">Quellcode-Paket</a> von OpenSlides
+      <a href="http://files.openslides.org/openslides-{{version}}.tar.gz">tar.gz-Paket</a> von OpenSlides
       heruntergeladen und installiert werden.{% endblocktrans %}
       {% blocktrans %}Details in der <a
       href="http://files.openslides.org/INSTALL-{{version}}.txt">Installationsanleitung</a>.{% endblocktrans %}
@@ -52,6 +52,13 @@
 </div>
 <br>
 
+<h2><img class="os-icon" src="/static/img/icons/glyphicons_200_download.png">
+{% trans 'Plugins' %}</h2>
+{% url 'plugins' as plugins_url %}
+<p>{% blocktrans %}Erweitern Sie den Funktionsumfang von OpenSlides mit
+<a href="{{ plugins_url }}">Plugins</a>.{% endblocktrans %}
+</p>
+<br>
 
 <h2><img class="os-icon" src="/static/img/icons/glyphicons_066_tags.png">
 {% trans 'Alle Versionen' %}</h2>
