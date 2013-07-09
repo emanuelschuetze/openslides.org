@@ -1,5 +1,4 @@
 {% extends "base.html" %}
-
 {% load i18n %}
 
 {% block title %}{{ block.super }} - {% trans 'Plugins' %}{% endblock %}
@@ -12,9 +11,7 @@
 
 {% block mainmenu_download %}active{% endblock %}
 
-
 {% block content %}
-
 <p>
 {% blocktrans %}OpenSlides 1.4 besitzt eine Schnittstelle für externe Plugins.
 Plugins für OpenSlides sind in Python geschriebene Django-Applikationen.
@@ -33,8 +30,8 @@ Verfügbare Plugins</h2>
 <ul>
 <li><b>CSV Export Plugin</b>
 <p>URL: <a href="https://github.com/OpenSlides/openslides-csv-export">https://github.com/OpenSlides/openslides-csv-export</a><br>
-Lizenz: <br>
-Autoren: Oskar Hahn, Norman Jäckel
+{% trans 'Lizenz' %}: <br>
+{% trans 'Autoren' %}: Oskar Hahn, Norman Jäckel
 </p>
 <p>{% blocktrans %}Dieses Plugin bietet einen CSV-Export der Rednerliste.
 Es soll außerdem als Beispiel dienen zum Schreiben von Plugins für OpenSlides.{% endblocktrans %}
@@ -43,8 +40,8 @@ Es soll außerdem als Beispiel dienen zum Schreiben von Plugins für OpenSlides.
 
 <li><b>VoteCollector Plugin</b>
 <p>URL: <a href="https://github.com/OpenSlides/openslides-votecollector">https://github.com/OpenSlides/openslides-votecollector</a><br>
-Lizenz: GPL v2+<br>
-Autoren: Oskar Hahn, Emanuel Schütze
+{% trans 'Lizenz' %}: GPL v2+<br>
+{% trans 'Autoren' %}: Oskar Hahn, Emanuel Schütze
 </p>
 <p>{% blocktrans %}Dieses Plugin ermöglicht die Anbindung von OpenSlides an das elektronische Abstimmungssystem
 <a href="http://www.keypaddepot.de/de/Wahlen/VoteCollector-App-nur-Plug-In-zu-OpenSlides.html">VoteCollector</a>.{% endblocktrans %}
@@ -53,8 +50,8 @@ Autoren: Oskar Hahn, Emanuel Schütze
 
 <li><b>Topic Voting Plugin</b>
 <p>URL: <a href="https://github.com/normanjaeckel/openslides-topicvoting">https://github.com/normanjaeckel/openslides-topicvoting</a><br>
-Lizenz: <br>
-Autoren: Norman Jäckel
+{% trans 'Lizenz' %}: <br>
+{% trans 'Autoren' %}: Norman Jäckel
 </p>
 <p>{% blocktrans %}Dieses Plugin bietet eine strukturierte Abstimmung
 über Themen unter Verwendung der Sainte-Laguë-Methode.{% endblocktrans %}
@@ -69,10 +66,8 @@ Autoren: Norman Jäckel
 <p>{% trans 'Ältere Versionen sowie die SHA1-Prüfsummen finden Sie unter' %}
 <a href="http://files.openslides.org/plugins">files.openslides.org/plugins/</a>.
 </p>
-<p>{% blocktrans %}
-Ausgewählte Plugins sind auch direkt im
+<p>{% blocktrans %}Ausgewählte Plugins sind auch direkt im
 <a href="https://github.com/OpenSlides/">Quellcode-Repository bei GitHub</a>
-zu finden.
-{% endblocktrans %}
+zu finden.{% endblocktrans %}
 </p>
 {% endblock %}
