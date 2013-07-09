@@ -43,15 +43,34 @@
             <li class="{% block mainmenu_contact %}{% endblock %}"><a
                 href="{% url 'contact' %}">{% trans "Kontakt" %}</a></li>
             <li class="divider-vertical"></li>
-            {% get_available_languages as languages %}
-            {% for lang_code, lang_name in languages %}
-                {% language lang_code %}
-                <li {% if LANGUAGE_CODE == lang_code %}class="active"{% endif %}>
-                  <a href="{% url 'home' %}"><img title="{{ lang_name }}" alt="{{ lang_name }}"
-                      src="/static/img/icons/{{lang_code}}.png"> {{ lang_name }}</a>
-                </li>
-                {% endlanguage %}
-            {% endfor %}
+            <!-- Demo button -->
+            <a class="btn btn-small btn-info" href="{% url 'demo' %}">{% trans 'Demo' %}</a>
+ 
+            <!-- Language drop down button -->
+            <div class="btn-group">
+                {% get_available_languages as languages %}
+                {% for lang_code, lang_name in languages %}
+                    {% language lang_code %}
+                    {% if LANGUAGE_CODE == lang_code %}
+                        <a class="btn  btn-small dropdown-toggle" data-toggle="dropdown" href="#">
+                            <img title="{{ lang_name }}" alt="{{ lang_name }}"
+                            src="/static/img/icons/{{lang_code}}.png"> {{ lang_name }}
+                            <span class="caret"></span>
+                        </a>
+                    {% endif %}
+                    {% endlanguage %}
+                {% endfor %}
+                <ul class="dropdown-menu">
+                {% for lang_code, lang_name in languages %}
+                    {% language lang_code %}
+                    <li {% if LANGUAGE_CODE == lang_code %}class="active"{% endif %}>
+                        <a href="{% url 'home' %}"><img title="{{ lang_name }}" alt="{{ lang_name }}"
+                        src="/static/img/icons/{{lang_code}}.png"> {{ lang_name }}</a>
+                    </li>
+                    {% endlanguage %}
+                {% endfor %}
+                </ul>
+            </div>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
