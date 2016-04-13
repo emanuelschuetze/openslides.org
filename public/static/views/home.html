@@ -1,414 +1,162 @@
   <!-- *** Promo *** -->
   <section id="promo" class="promo section">
     <div class="container text-center">
-      <img src="static/img/openslides-logo-dark.png" height="130px">
-      <p class="intro" translate>OpenSlides is a free, web based presentation and assembly system
-      for managing and projecting agenda, motions and elections of an assembly.</p>
+      <img src="static/img/openslides-services-logo-min.png" height="130px">
+      <p class="intro" translate>Professional services for your usage of OpenSlides.<br>
+      We help to bring OpenSlides to your assembly.</p>
 
-      <a class="btn btn-primary" href="http://demo.openslides.org" target="_blank" translate>Try now</a>
+      <a class="btn btn-primary" href="/#contact" du-smooth-scroll translate>Contact us</a>
 
       <div class="meta">
-        <ul class="list-inline">
-          <li>
-            <a href="https://github.com/OpenSlides/OpenSlides" target="_blank">
-              <i class="fa fa-github"></i>
-              GitHub
-            </a>
-          <li>
-            <a href="https://twitter.com/openslides" target="_blank">
-              <i class="fa fa-twitter"></i>
-              Twitter
-            </a>
-          <li>
-            <a href="http://docs.openslides.org/" target="_blank">
+      </div>
+    </div>
+    <div class="blue">&nbsp;</div>
+  </section>
+
+
+  <!-- *** Services *** -->
+  <section id="services" class="bright section">
+    <div class="container">
+      <h1 class="text-center" translate>Services</h1>
+
+      <p class="lead text-center" translate>Our services helps your organization
+      to run OpenSlides professional and successfully on your assembly.
+
+      <p translate>All services are offerd by 
+      <a href="https://intevation.de" target="_blank">Intevation GmbH</a> – a
+      Free Software company from Osnabrück which cooperates closely with the OpenSlides
+      community and supports the development and maintenance of OpenSlides.</p>
+
+        <div class="row">
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <h3>
+              <i class="fa fa-wrench"></i>
+              <translate>Customizing</translate>
+            </h3>
+            <p translate>Get the OpenSlides projector in your corporate design.
+            Enhance your OpenSlides application with new or customized features.
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <h3>
+              <i class="fa fa-cloud"></i>
+              <translate>Hosting</translate>
+            </h3>
+            <p translate>Use OpenSlides as online service without installation effort!
+            We host your customized OpenSlides
+            installation on our powerful server infrastructur – secure and reliable.
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <h3>
+              <i class="fa fa-phone"></i>
+              <translate>Individual support</translate>
+            </h3>
+            <p translate>Get help to configure, use and understand the power of
+            OpenSlides. We provide telephone and email support to
+            assist and advise you in the preparation phase.
+            </p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <h3>
               <i class="fa fa-book"></i>
-              <translate>Manual</translate>
-            </a>
-        </ul>
-      </div>
-    </div>
-    <div id="news" class="blue text-center">
-      <a href="http://mail.openslides.org/pipermail/announcement/2016-March/000021.html">
-        +++ OpenSlides 2.0b5 <translate>released</translate> +++
-      </a>
-    </div>
-  </section>
-
-
-  <!-- *** About *** -->
-  <section id="about" class="bright section">
-    <div class="container">
-      <h1 class="text-center" translate>What is OpenSlides?</h1>
-
-      <p class="lead text-center" translate>OpenSlides helps to prepare and performe your assembly.
-      You can manage agenda items, motions, elections, lists of speakers, documents and participants.
-      Everything can be projected to the screen.</p>
-
-      <p class="lead text-center bluetext"
-        translate>Project, control, participate – Everything for your paperless assembly in one software!</p>
-
-      <div class="row text-center">
-        <div class="col-md-4 col-sm-6 col-xs-12">
-          <div class="icon-holder">
-            <img src="static/img/projector-icon.svg" class="projector-icon">
-          </div>
-          <div class="content">
-            <p translate>Motions, elections or simply a list of speakers:
-            Everything can be projected on a canvas. All you need is a browser.
-          </div>
-        </div>
-
-        <div class="col-md-4 col-sm-6 col-xs-12">
-          <div class="icon-holder">
-            <i class="fa fa-laptop"></i>
-          </div>
-          <div class="content">
-            <p translate>Our backend enables you to manage your slides on-the-fly
-            while assembly sees the projector in fullscreen.
-          </div>
-        </div>
-
-        <div class="col-md-4 col-sm-6 col-xs-12">
-          <div class="icon-holder">
-            <i class="fa fa-mobile"></i>
-          </div>
-          <div class="content">
-            <p translate>Integrate the plenum! Give access to participants on their own devices
-            (to submit motions or recall voting results).
-        </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- References -->
-    <div class="references blue text-center" ng-controller="ReferenceCtrl">
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-1 controls">
-            <a href="" ng-click="moveLeft()">
-              <i class="fa fa-chevron-left"></i>
-            </a>
-          </div>
-          <img ng-repeat="logo in logos | limitTo: numberPerPage : page*numberPerPage" class="col-xs-2 logo"
-              ng-src="static/img/references/{{ logo.src }}" alt="{{ logo.name }}" title="{{ logo.name }}">
-          <div class="col-xs-1 controls">
-            <a href="" ng-click="moveRight()">
-              <i class="fa fa-chevron-right"></i>
-            </a>
-          </div>
-        </div>
-        <div class="pull-right">
-          <a ui-sref="references" class="accent">
-            <small><translate>all references</translate></small>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- *** FEATURES *** -->
-  <section id="features" class="bright">
-    <div class="container">
-      <h1 class="text-center" translate>Features</h1>
-
-          <h2>
-            <i class="fa fa-lg fa-calendar-o"></i>
-            <translate>Agenda</translate>
-          </h2>
-      <div class="row">
-        <div class="col-sm-6">
-          <p class="lead" translate>Be flexible: Add, modify or move agenda items during operation.</p>
-          <ul>
-            <li translate>List of speakers for each agenda item.
-            <li translate>Use countdowns to restrict speaking times.
-            <li translate>Automatic numbering of items.
-            <li translate>Scheduling: estimate duration of each agenda item.
-            <li translate>Integrate unofficial items (e.g. breaks) into agenda.
-            <li translate>Mark and hide closed agenda items.
-            <li translate>Export agenda as PDF.
-            <li translate>Control projector from sidebar.
-            <li translate>Sort agenda by drag and drop.
-          </ul>
-        </div>
-        <div class="col-sm-6">
-          <uib-carousel active="0" interval>
-            <uib-slide index="0">
-              <img src="static/img/features/agenda-list_de.png">
-            </uib-slide>
-            <uib-slide index="1">
-              <img src="static/img/features/agenda-list-of-speakers_de.png">
-            </uib-slide>
-            <uib-slide index="2">
-              <img src="static/img/features/agenda-list-of-speakers-projector_de.png">
-            </uib-slide>
-            <uib-slide index="3">
-              <img src="static/img/features/agenda-projector_de.png">
-            </uib-slide>
-            <uib-slide index="4">
-              <img src="static/img/features/agenda-edit_de.png">
-            </uib-slide>
-          </uib-carousel>
-        </div>
-      </div>
-
-      <div class="row spacer">
-        <div class="col-sm-6">
-        </div>
-        <div class="col-sm-6">
-          <h2>
-            <i class="fa fa-lg fa-file-text"></i>
-            <translate>Motions</translate>
-          </h2>
-        </div>
-        <div class="col-sm-6">
-          <uib-carousel active="0" interval>
-            <uib-slide index="0">
-              <img src="static/img/features/motions-list_de.png">
-            </uib-slide>
-            <uib-slide index="1">
-              <img src="static/img/features/motions-detail_de.png">
-            </uib-slide>
-            <uib-slide index="2">
-              <img src="static/img/features/motions-projector_de.png">
-            </uib-slide>
-            <uib-slide index="3">
-              <img src="static/img/features/motions-pdf_de.png">
-            </uib-slide>
-          </uib-carousel>
-        </div>
-        <div class="col-sm-6">
-          <p class="lead" translate>Save paper: Submit and manage motions and voting results digitally.</p>
-          <ul>
-            <li translate>Show/hide each motion in agenda.
-            <li translate>Customizable motion states and workflows.
-            <li translate>Manage categories and tags.
-            <li translate>Define required supporters per motion.
-            <li translate>Version history to maintain modifications.
-            <li translate>HTML editor to format motion text and reason.
-            <li translate>Record voting results.
-            <li translate>Import motions from CSV.
-            <li translate>Export motions as PDF.
-          </ul>
-        </div>
-      </div>
-
-      <div class="row spacer">
-        <h2>
-          <i class="fa fa-lg fa-pie-chart"></i>
-          <translate>Elections</translate>
-        </h2>
-        <div class="col-sm-6">
-          <p class="lead"
-              translate>Accelerate the procedure: Generate ad hoc ballots for your secret elections.</p>
-          <ul>
-            <li translate>Nominate candidates from list of participants.
-            <li translate>Print personalized ballot papers for secret elections.
-            <li translate>Supported vote options: Yes/No/Abstain or one vote per candidate.
-            <li translate>Several ballots.
-            <li translate>Enter and project election results as diagram.
-            <li translate>Export elections (with all results) as PDF.
-          </ul>
-        </div>
-        <div class="col-sm-6">
-          <uib-carousel active="0" interval>
-            <uib-slide index="0">
-              <img src="static/img/features/elections-list_de.png">
-            </uib-slide>
-            <uib-slide index="1">
-              <img src="static/img/features/elections-detail_de.png">
-            </uib-slide>
-            <uib-slide index="2">
-              <img src="static/img/features/elections-projector_de.png">
-            </uib-slide>
-            <uib-slide index="3">
-              <img src="static/img/features/elections-ballot-pdf_de.png">
-            </uib-slide>
-          </uib-carousel>
-        </div>
-      </div>
-
-      <div class="row spacer">
-        <div class="col-sm-6">
-        </div>
-        <div class="col-sm-6">
-          <h2>
-            <i class="fa fa-search"></i>
-            <translate>More features</translate>
-          </h2>
-        </div>
-        <div class="col-sm-6">
-          <uib-carousel active="0" interval>
-            <uib-slide index="0">
-              <img src="static/img/features/general-users-list_de.png">
-            </uib-slide>
-            <uib-slide index="1">
-              <img src="static/img/features/general-files-list_de.png">
-            </uib-slide>
-            <uib-slide index="2">
-              <img src="static/img/features/general-chat-frontpage_de.png">
-            </uib-slide>
-            <uib-slide index="3">
-              <img src="static/img/features/general-windows-portable.png">
-            </uib-slide>
-          </uib-carousel>
-        </div>
-        <div class="col-sm-6">
-          <ul>
-            <li translate>Manage participants, groups and permissions.
-            <li translate>Document filing with PDF projection.
-            <li translate>Group chat.
-            <li translate>Customizeable front page.
-            <li translate>Portable Version for Windows.
-            <li translate>Full text search.
-            <li translate>Customizeable projector template.
-            <li translate>Responsive design.
-            <li translate>Multilingual (English, German, French, Czech, Portuguese and Spanish).
-            <li translate>OpenSlides is a plattform independet web application based on Python 3 and AngularJS with a REST-API.
-          </ul>
-        </div>
-      </div>
-
-    </div><!--//container-->
-
-    <div class="blue">
-      <div class="container">
-        <h2 class="whitetext text-center" translate>Why should I use OpenSlides?</h2>
-        <div class="row">
-          <div class="col-md-4 col-sm-6 col-xs-6">
-            <h3>
-              <i class="fa fa-check-square-o"></i>
-              <translate>More transparency and interaction for your plenum.</translate>
+              <translate>Training</translate>
             </h3>
+            <p translate>Train your staff members in a workshop.
+            We show you how to best integrate OpenSlides in your assembly.
+            </p>
+            <span class="hide-sm"><br>&nbsp;</span>
           </div>
-          <div class="col-md-4 col-sm-6 col-xs-6">
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
             <h3>
-              <i class="fa fa-check-square-o"></i>
-              <translate>Make your assembly paperless and modern.</translate>
+              <i class="fa fa-medkit"></i>
+              <translate>On-site support</translate>
             </h3>
+            <p translate>Book a technician who assist you on-site in setting up and
+            using Openslides while your assembly.
+            </p>
           </div>
-          <div class="col-md-4 col-sm-6 col-xs-6">
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
             <h3>
-              <i class="fa fa-check-square-o"></i>
-              <translate>Use OpenSlides already for the preparation phase.</translate>
+              <i class="fa fa-signal"></i>
+              <translate>Electronic voting</translate>
             </h3>
-          </div>
-          <div class="col-md-4 col-sm-6 col-xs-6">
-            <h3>
-              <i class="fa fa-check-square-o"></i>
-              <translate>OpenSlides helps to create a protocol with all resolutions.</translate>
-            </h3>
-          </div>
-          <div class="col-md-4 col-sm-6 col-xs-6">
-            <h3>
-              <i class="fa fa-check-square-o"></i>
-              <translate>Get professional support from developer team.</translate>
-            </h3>
-          </div>
-          <div class="col-md-4 col-sm-6 col-xs-6">
-            <h3>
-              <i class="fa fa-check-square-o"></i>
-              <translate>OpenSlides is Free & Open Source Sofware.</translate>
-            </h3>
+            <p translate>Rent a digital electronic voting system (TED system) with keypads to
+            accelerate the voting process of motions and elections.
+            </p>
+            <img src="static/img/engage.png" alt="Engage keypad" title="Engage voting keypad" class="photo thumbnail">
           </div>
         </div><!--//row-->
 
-      </div>
-    </div>
-  </section>
-
-
-  <!-- *** Download *** -->
-  <section id="download" class="dark" ng-controller="DownloadCtrl">
-    <div class="container text-center">
-      <h1 translate>Download</h1>
-      <h3><translate>Current stable version</translate>: OpenSlides {{stableVersion}} ({{stableDate}})</h3>
-        <div class="btns">
-          <a class="btn btn-secondary col"
-              href="http://files.openslides.org/releases/{{stableVersion}}/openslides-{{stableVersion}}-portable.zip">
-            <i class="fa fa-2x fa-windows"></i><br>
-            Windows Portable<br>
-            <small>openslides-{{stableVersion}}-portable.zip</small>
-          </a>
-          <a class="btn btn-secondary col"
-              href="http://files.openslides.org/releases/{{stableVersion}}/openslides-{{stableVersion}}.tar.gz">
-            <i class="fa fa-2x fa-codepen"></i><br>
-            <translate>Source package</translate><br>
-            <small>openslides-{{stableVersion}}.tar.gz</small>
-          </a>
+        <div class="row text-center">
+          <a class="btn btn-primary" href="/#contact" du-smooth-scroll translate>Contact us</a>
         </div>
-
-        <p class="grey">
-          <i class="fa fa-windows"></i> Windows:
-          <translate>Unzip portable version and run openslides.exe.</translate><br>
-          <i class="fa fa-apple"></i> MacOS &middot; <i class="fa fa-linux"></i> Linux:
-          <translate>See</translate>
-          <a href="https://github.com/OpenSlides/OpenSlides/blob/{{stableVersion}}/README.rst#iii-installation">
-            <i class="fa fa-book"></i>
-            <translate>install instructions</translate>.
-          </a>
-
-        <h3 class="spacer"><translate>Latest beta version</translate>: OpenSlides {{betaVersion}} ({{betaDate}})</h3>
-        <div class="btns">
-          <a class="btn btn-secondary btn-outline col"
-              href="http://files.openslides.org/releases/{{betaVersion}}/openslides-{{betaVersion}}-portable.zip">
-            <i class="fa fa-2x fa-windows"></i><br>
-            Windows Portable<br>
-            <small>openslides-{{betaVersion}}-portable.zip</small>
-          </a>
-          <a class="btn btn-secondary btn-outline col"
-              href="http://files.openslides.org/releases/{{betaVersion}}/openslides-{{betaVersion}}.tar.gz">
-            <i class="fa fa-2x fa-codepen"></i><br>
-            <translate>Source package</translate><br>
-            <small>openslides-{{betaVersion}}.tar.gz</small>
-          </a>
-        </div>
-
-        <p class="grey">
-          <i class="fa fa-windows"></i> Windows:
-          <translate>Unzip portable version and run openslides.exe.</translate><br>
-          <i class="fa fa-apple"></i> MacOS &middot; <i class="fa fa-linux"></i> Linux:
-          <translate>See</translate>
-          <a href="https://github.com/OpenSlides/OpenSlides/blob/{{betaVersion}}/README.rst#iii-installation">
-            <i class="fa fa-book"></i>
-            <translate>install instructions</translate>.
-          </a>
-
-        <h3 class="spacer"translate>More</h3>
-        <ul class="list-inline">
-          <li>
-            <a href="http://files.openslides.org/releases/">
-              <i class="fa fa-archive"></i>
-              <translate>Previous releases</translate>
-            </a>
-          <li>
-            <a href="https://github.com/OpenSlides/OpenSlides/">
-              <i class="fa fa-github"></i>
-              <translate>GitHub repository</translate>
-            </a>
-
-
     </div><!--//container-->
 
-    <div class="blue">
+    <!-- References -->
+    <div class="references blue" ng-controller="ReferenceCtrl">
       <div class="container">
-        <h2 class="text-center" translate>Available Plugins</h2>
-
-        <dl>
-          <dt><a href="https://github.com/OpenSlides/openslides-export">» Export Plugin</a></dt>
-          <dd translate>Exports OpenSlides data in several formats (e.g. ODT, HTML, CSV).</dd>
-
-          <dt><a href="https://github.com/OpenSlides/openslides-votecollector">» VoteCollector Plugin</a></dt>
-          <dd translate>Connects OpenSlides with the electronic voting system
-          <a href="http://www.voteworks.de/TedSystem-Anwendungen/Mitgliederversammlungen/VoteCollector-OpenSlides.html">VoteCollector</a.></dd>
-
-          <dt><a href="https://github.com/OpenSlides/openslides-protocol">» Protocol Plugin (Beta)</a></dt>
-          <dd translate>Provides protocolling of agenda items in OpenSlides.</dd>
-        </dl>
-        <p translate>Note: Not all plugins are already ported for OpenSlides 2.0.</p>
+        <h2 class="text-center" translate>Customor statements</h2>
+          <uib-carousel active="0" interval="6000">
+            <uib-slide index="0">
+              <div class="row">
+                <div class="col-xs-1"></div>
+                <img src="static/img/references/slaek-logo.png" class="col-xs-3 thumbnail pull-left">
+                <div class="col-xs-7">
+                  <blockquote>
+                    <p>»Eine Software ist auf Dauer nur so gut wie seine
+                    Entwickler. Wir gehen davon aus, mit der Firma Intevation und
+                    Herrn Schütze auf Dauer einen kompetenten und verlässlichen
+                    Partner an unserer Seite zu haben.«
+                    <footer>Sächsische Landesärztekammer</footer>
+                  </blockquote>
+                </div>
+                <div class="col-xs-1"></div>
+              </div>
+            </uib-slide>
+            <uib-slide index="1">
+              <div class="row">
+                <div class="col-xs-1"></div>
+                <img src="static/img/references/gruene-logo.png" class="col-xs-3 thumbnail pull-left">
+                <div class="col-xs-7">
+                  <blockquote>
+                    <p>»Wir sehen in OpenSlides ein innovatives Open Source
+                    Produkt, das dabei hilft, unsere demokratischen,
+                    innerparteilichen Strukturen in das digitale Zeitalter zu
+                    transportieren.«
+                    <footer>BÜNDNIS 90/DIE GRÜNEN, Landesverband Hamburg</footer>
+                  </blockquote>
+                </div>
+                <div class="col-xs-1"></div>
+              </div>
+            </uib-slide>
+            <uib-slide index="2">
+              <div class="row">
+                <div class="col-xs-1"></div>
+                <img src="static/img/references/ev-kirche-krefeld-viersen-logo.png" class="col-xs-3 thumbnail pull-left">
+                <div class="col-xs-7">
+                  <blockquote>
+                    <p>»OpenSlides unterstützt uns schon bei der Planung
+                    unserer Kreissynoden durch die strukturierte Eingabe der
+                    Tagesordnung, der Anträge und Wahlen. Während der
+                    Veranstaltung bleiben wir immer flexibel und können
+                    situationsbedingt 'Folien' ein- und ausblenden.«
+                    <footer>Evangelischer Kirchenkreis Krefeld-Viersen</footer>
+                  </blockquote>
+                </div>
+                <div class="col-xs-1"></div>
+              </div>
+            </uib-slide>
+          </uib-carousel>
+        </div>
+        <p></p>
       </div>
     </div>
   </section>
+
 
 
   <!-- *** CONTACT *** -->
@@ -416,75 +164,23 @@
     <div class="container">
       <h1 class="text-center" translate>Contact</h1>
 
+      <p class="lead" translate>We look forward to hearing from you!</p>
       <div class="row">
-        <div class="col-md-4 col-sm-6 col-xs-12">
-          <h3><i class="fa fa-paper-plane"></i> Mailing lists</h3>
-          <dl>
-            <dt>announcement@openslides.org
-            <dd><translate>Official announcements</translate><br>
-              <a href="http://mail.openslides.org/listinfo/announcement/" class="accent" translate>Subscribe</a> &nbsp;
-              <a href="http://mail.openslides.org/pipermail/announcement/" class="accent" translate>Archive</a>
 
-            <dt>users-de@openslides.org</dt>
-            <dd><translate>For users and developers (German)</translate><br>
-              <a href="http://mail.openslides.org/listinfo/users-de/" class="accent" translate>Subscribe</a> &nbsp;
-              <a href="http://mail.openslides.org/pipermail/users-de/" class="accent" translate>Archive</a>
-
-            <dt>users-en@openslides.org</dt>
-            <dd><translate>For users and developers (English)</translate><br>
-              <a href="http://mail.openslides.org/listinfo/users-en/" class="accent" translate>Subscribe</a> &nbsp;
-              <a href="http://mail.openslides.org/pipermail/users-en/" class="accent" translate>Archive</a>
-          </dl>
-
-          <h3><i class="fa fa-comment"></i> IRC</h3>
-          <p translate>Chat with our OpenSlides developers via IRC network
-          <code>freenode</code>.
-          <p>
-            <translate>Channel</translate>:<br>
-            <a href="http://webchat.freenode.net/?channels=openslides&uio=d4s" target="_blank">
-              <code>#openslides</code>
-            </a>
-            (<translate>English</translate>)<br>
-            <a href="http://webchat.freenode.net/?channels=openslides&uio=d4s">
-              <code>#openslides.de</code>
-            </a>
-            (<translate>German</translate>)
-        </div>
-
-        <div class="col-md-4 col-sm-6 col-xs-12">
-          <h3><i class="fa fa-twitter"></i> Twitter</h3>
-          <p translate>Tweet your experience with OpenSlides and mention
-            <a href="https://twitter.com/openslides" target="_blank">@openslides</a>.
-
-          <h3><i class="fa fa-github"></i> GitHub</h3>
-          <p translate>Get source code, report issues or read wiki pages on
-            <a href="https://github.com/OpenSlides/OpenSlides" target="_blank">GitHub</a>.
-
-          <h3><i class="fa fa-language"></i> Transifex</h3>
-          <p translate>Help translating the UI or website of OpenSlides by using
-            <a href="https://www.transifex.com/openslides/">Transifex</a>.
-        </div>
-
-        <div class="col-md-4 col-sm-6 col-xs-12">
-          <h3><i class="fa fa-users"></i> <translate>Core developer team</translate></h3>
-          <p><translate>Contact the three founder and core developers of OpenSlides:</translate>
-          Oskar Hahn, Norman Jäckel <translate>and</translate> Emanuel Schütze.<br>
-          <a href="mailto:support@openslides.org"><i class="fa  fa-envelope"></i> support@openslides.org</a>
-        </div>
-
-        <div class="col-md-4 col-sm-6 col-xs-12">
-          <h3><i class="fa fa-black-tie"></i> <translate>Professional Support</translate></h3>
-          <p translate>You are looking for customisations and support for OpenSlides?
-          Look at our <a href="https://openslides.com">service page</a> and request our
-          contact person:</p>
+        <div class="col-md-6 col-sm-12">
+          <h3><i class="fa fa-user"></i> Your contact person:</h3>
           <p>
           <b>Emanuel Schütze</b><br>
           Intevation GmbH<br>
           Neuer Graben 17<br>
           D-49074 Osnabrück<br>
-          <a href="mailto:emanuel.schuetze@intevation.de"><i class="fa fa-envelope"></i> emanuel.schuetze@intevation.de</a><br>
-          <i class="fa fa-phone"></i> +49 541 335083-746
+          <p>
+            <a href="mailto:emanuel.schuetze@intevation.de"><i class="fa fa-envelope"></i>
+            emanuel.schuetze@intevation.de</a>
+          <p>
+            <strong><i class="fa fa-phone"></i> +49 541 335083-746</strong>
         </div>
+
 
       </div><!--//row-->
     </div>

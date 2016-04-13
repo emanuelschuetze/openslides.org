@@ -4,499 +4,111 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Project-Id-Version: \n"
 
-#: press.html:80
-#: press.html:82
-msgid "2nd place"
+#: index.html:86
+msgid "<i>OpenSlides Services</i> is an offer of the Intevation GmbH."
 msgstr ""
 
-#: index.html:58
-msgid "About"
-msgstr ""
-
-#: home.html:202
-msgid "Accelerate the procedure: Generate ad hoc ballots for your secret elections."
-msgstr ""
-
-#: home.html:117
-msgid "Agenda"
-msgstr ""
-
-#: home.html:426
-#: home.html:431
-#: home.html:436
-msgid "Archive"
-msgstr ""
-
-#: press.html:45
-msgid "Articles and Publications"
-msgstr ""
-
-#: home.html:125
-msgid "Automatic numbering of items."
-msgstr ""
-
-#: home.html:395
-msgid "Available Plugins"
-msgstr ""
-
-#: press.html:10
-#: press.html:46
-#: press.html:96
-msgid "Available in German only!"
-msgstr ""
-
-#: press.html:65
-msgid "Awards"
-msgstr ""
-
-#: home.html:121
-msgid "Be flexible: Add, modify or move agenda items during operation."
-msgstr ""
-
-#: home.html:443
-msgid "Channel"
-msgstr ""
-
-#: home.html:440
+#: home.html:25
 msgid ""
-"Chat with our OpenSlides developers via IRC network\n"
-"          <code>freenode</code>."
-msgstr ""
-
-#: home.html:402
-msgid ""
-"Connects OpenSlides with the electronic voting system\n"
-"          <a href=\"http://www.voteworks.de/TedSystem-Anwendungen/Mitgliederversammlungen/VoteCollector-OpenSlides.html\">VoteCollector</a>"
-msgstr ""
-
-#: home.html:417
-#: index.html:64
-msgid "Contact"
-msgstr ""
-
-#: home.html:470
-msgid "Contact the three founder and core developers of OpenSlides:"
-msgstr ""
-
-#: home.html:130
-msgid "Control projector from sidebar."
-msgstr ""
-
-#: home.html:469
-msgid "Core developer team"
-msgstr ""
-
-#: home.html:325
-msgid "Current stable version"
-msgstr ""
-
-#: home.html:184
-msgid "Customizable motion states and workflows."
-msgstr ""
-
-#: home.html:261
-msgid "Customizeable front page."
-msgstr ""
-
-#: home.html:264
-msgid "Customizeable projector template."
-msgstr ""
-
-#: home.html:186
-msgid "Define required supporters per motion."
-msgstr ""
-
-#: legalnotice.html:14
-msgid "Design by"
-msgstr ""
-
-#: home.html:259
-msgid "Document filing with PDF projection."
-msgstr ""
-
-#: home.html:324
-#: index.html:62
-msgid "Download"
-msgstr ""
-
-#: home.html:199
-msgid "Elections"
-msgstr ""
-
-#: home.html:447
-#: main.js:74
-msgid "English"
-msgstr ""
-
-#: home.html:209
-msgid "Enter and project election results as diagram."
-msgstr ""
-
-#: home.html:129
-msgid "Export agenda as PDF."
-msgstr ""
-
-#: home.html:210
-msgid "Export elections (with all results) as PDF."
-msgstr ""
-
-#: home.html:191
-msgid "Export motions as PDF."
-msgstr ""
-
-#: home.html:399
-msgid "Exports OpenSlides data in several formats (e.g. ODT, HTML, CSV)."
-msgstr ""
-
-#: home.html:113
-#: index.html:60
-msgid "Features"
-msgstr ""
-
-#: home.html:434
-msgid "For users and developers (English)"
-msgstr ""
-
-#: home.html:429
-msgid "For users and developers (German)"
-msgstr ""
-
-#: home.html:263
-msgid "Full text search."
-msgstr ""
-
-#: home.html:451
-#: main.js:75
-msgid "German"
-msgstr ""
-
-#: home.html:305
-msgid "Get professional support from developer team."
-msgstr ""
-
-#: home.html:460
-msgid ""
-"Get source code, report issues or read wiki pages on\n"
-"            <a href=\"https://github.com/OpenSlides/OpenSlides\" target=\"_blank\">GitHub</a>."
-msgstr ""
-
-#: home.html:387
-msgid "GitHub repository"
-msgstr ""
-
-#: home.html:260
-msgid "Group chat."
-msgstr ""
-
-#: home.html:188
-msgid "HTML editor to format motion text and reason."
-msgstr ""
-
-#: home.html:464
-msgid ""
-"Help translating the UI or website of OpenSlides by using\n"
-"            <a href=\"https://www.transifex.com/openslides/\">Transifex</a>."
-msgstr ""
-
-#: home.html:190
-msgid "Import motions from CSV."
+"All services are offerd by \n"
+"      <a href=\"https://intevation.de\" target=\"_blank\">Intevation GmbH</a> – a\n"
+"      Free Software company from Osnabrück which cooperates closely with the OpenSlides\n"
+"      community and supports the development and maintenance of OpenSlides."
 msgstr ""
 
 #: home.html:76
 msgid ""
-"Integrate the plenum! Give access to participants on their own devices\n"
-"            (to submit motions or recall voting results)."
+"Book a technician who assist you on-site in setting up and\n"
+"            using Openslides while your assembly."
 msgstr ""
 
-#: home.html:127
-msgid "Integrate unofficial items (e.g. breaks) into agenda."
+#: home.html:164
+#: index.html:61
+msgid "Contact"
 msgstr ""
 
-#: home.html:351
-msgid "Latest beta version"
+#: home.html:8
+#: home.html:94
+msgid "Contact us"
 msgstr ""
 
-#: index.html:87
-#: legalnotice.html:3
-msgid "Legal notice"
+#: home.html:34
+msgid "Customizing"
 msgstr ""
 
-#: home.html:123
-msgid "List of speakers for each agenda item."
+#: home.html:101
+msgid "Customor statements"
 msgstr ""
 
-#: home.html:287
-msgid "Make your assembly paperless and modern."
+#: home.html:84
+msgid "Electronic voting"
 msgstr ""
 
-#: home.html:185
-msgid "Manage categories and tags."
-msgstr ""
-
-#: home.html:258
-msgid "Manage participants, groups and permissions."
-msgstr ""
-
-#: home.html:25
-msgid "Manual"
-msgstr ""
-
-#: home.html:128
-msgid "Mark and hide closed agenda items."
-msgstr ""
-
-#: home.html:377
-msgid "More"
-msgstr ""
-
-#: press.html:78
-msgid "More Awards"
-msgstr ""
-
-#: home.html:237
-msgid "More features"
-msgstr ""
-
-#: home.html:281
-msgid "More transparency and interaction for your plenum."
-msgstr ""
-
-#: home.html:161
-msgid "Motions"
-msgstr ""
-
-#: home.html:56
+#: home.html:55
 msgid ""
-"Motions, elections or simply a list of speakers:\n"
-"            Everything can be projected on a canvas. All you need is a browser."
+"Get help to configure, use and understand the power of\n"
+"            OpenSlides. We provide telephone and email support to\n"
+"            assist and advise you in the preparation phase."
 msgstr ""
 
-#: home.html:266
-msgid "Multilingual (English, German, French, Czech, Portuguese and Spanish)."
-msgstr ""
-
-#: home.html:205
-msgid "Nominate candidates from list of participants."
-msgstr ""
-
-#: home.html:408
-msgid "Note: Not all plugins are already ported for OpenSlides 2.0."
-msgstr ""
-
-#: home.html:424
-msgid "Official announcements"
-msgstr ""
-
-#: references.html:4
-msgid "OpenSildes was already successfully in use on numerous events. Here is a selection of references. We would be glad if we where allowed to mention your organization here."
-msgstr ""
-
-#: home.html:299
-msgid "OpenSlides helps to create a protocol with all resolutions."
+#: home.html:36
+msgid ""
+"Get the OpenSlides projector in your corporate design.\n"
+"            Enhance your OpenSlides application with new or customized features."
 msgstr ""
 
 #: home.html:43
+msgid "Hosting"
+msgstr ""
+
+#: home.html:53
+msgid "Individual support"
+msgstr ""
+
+#: home.html:74
+msgid "On-site support"
+msgstr ""
+
+#: home.html:22
 msgid ""
-"OpenSlides helps to prepare and performe your assembly.\n"
-"      You can manage agenda items, motions, elections, lists of speakers, documents and participants.\n"
-"      Everything can be projected to the screen."
-msgstr ""
-
-#: press.html:95
-msgid "OpenSlides in the press"
-msgstr ""
-
-#: home.html:311
-msgid "OpenSlides is Free & Open Source Sofware."
-msgstr ""
-
-#: index.html:91
-msgid "OpenSlides is Free Software, licensed under <a href=\"https://github.com/OpenSlides/OpenSlides/blob/master/LICENSE\">MIT</a>."
+"Our services helps your organization\n"
+"      to run OpenSlides professional and successfully on your assembly."
 msgstr ""
 
 #: home.html:5
 msgid ""
-"OpenSlides is a free, web based presentation and assembly system\n"
-"      for managing and projecting agenda, motions and elections of an assembly."
+"Professional services for your usage of OpenSlides.<br>\n"
+"      We help to bring OpenSlides to your assembly."
 msgstr ""
 
-#: home.html:267
-msgid "OpenSlides is a plattform independet web application based on Python 3 and AngularJS with a REST-API."
+#: home.html:86
+msgid ""
+"Rent a digital electronic voting system (TED system) with keypads to\n"
+"            accelerate the voting process of motions and elections."
+msgstr ""
+
+#: home.html:20
+#: index.html:59
+msgid "Services"
 msgstr ""
 
 #: home.html:66
 msgid ""
-"Our backend enables you to manage your slides on-the-fly\n"
-"            while assembly sees the projector in fullscreen."
+"Train your staff members in a workshop.\n"
+"            We show you how to best integrate OpenSlides in your assembly."
 msgstr ""
 
-#: news-20121119.html:4
-#: news-20141125.html:5
-msgid "Overview"
+#: home.html:64
+msgid "Training"
 msgstr ""
 
-#: home.html:262
-msgid "Portable Version for Windows."
-msgstr ""
-
-#: index.html:85
-#: press.html:3
-msgid "Press"
-msgstr ""
-
-#: press.html:184
-msgid "Press contact"
-msgstr ""
-
-#: press.html:9
-msgid "Press releases"
-msgstr ""
-
-#: home.html:382
-msgid "Previous releases"
-msgstr ""
-
-#: home.html:206
-msgid "Print personalized ballot papers for secret elections."
-msgstr ""
-
-#: home.html:476
-msgid "Professional Support"
-msgstr ""
-
-#: home.html:47
-msgid "Project, control, participate – Everything for your paperless assembly in one software!"
-msgstr ""
-
-#: home.html:406
-msgid "Provides protocolling of agenda items in OpenSlides."
-msgstr ""
-
-#: home.html:189
-msgid "Record voting results."
-msgstr ""
-
-#: index.html:86
-#: references.html:3
-msgid "References"
-msgstr ""
-
-#: legalnotice.html:4
+#: home.html:45
 msgid ""
-"Responsible for the content of these pages as representative\n"
-"    of the OpenSlides initiative:"
+"Use OpenSlides as online service without installation effort!\n"
+"            We host your customized OpenSlides\n"
+"            installation on our powerful server infrastructur – secure and reliable."
 msgstr ""
 
-#: home.html:265
-msgid "Responsive design."
-msgstr ""
-
-#: home.html:181
-msgid "Save paper: Submit and manage motions and voting results digitally."
-msgstr ""
-
-#: home.html:126
-msgid "Scheduling: estimate duration of each agenda item."
-msgstr ""
-
-#: home.html:345
-#: home.html:371
-msgid "See"
-msgstr ""
-
-#: home.html:208
-msgid "Several ballots."
-msgstr ""
-
-#: home.html:183
-msgid "Show/hide each motion in agenda."
-msgstr ""
-
-#: home.html:131
-msgid "Sort agenda by drag and drop."
-msgstr ""
-
-#: home.html:336
-#: home.html:362
-msgid "Source package"
-msgstr ""
-
-#: home.html:425
-#: home.html:430
-#: home.html:435
-msgid "Subscribe"
-msgstr ""
-
-#: home.html:207
-msgid "Supported vote options: Yes/No/Abstain or one vote per candidate."
-msgstr ""
-
-#: home.html:8
-msgid "Try now"
-msgstr ""
-
-#: home.html:456
-msgid ""
-"Tweet your experience with OpenSlides and mention\n"
-"            <a href=\"https://twitter.com/openslides\" target=\"_blank\">@openslides</a>."
-msgstr ""
-
-#: home.html:343
-#: home.html:369
-msgid "Unzip portable version and run openslides.exe."
-msgstr ""
-
-#: home.html:293
-msgid "Use OpenSlides already for the preparation phase."
-msgstr ""
-
-#: home.html:124
-msgid "Use countdowns to restrict speaking times."
-msgstr ""
-
-#: home.html:187
-msgid "Version history to maintain modifications."
-msgstr ""
-
-#: home.html:41
-msgid "What is OpenSlides?"
-msgstr ""
-
-#: home.html:276
-msgid "Why should I use OpenSlides?"
-msgstr ""
-
-#: home.html:477
-msgid ""
-"You are looking for customisations and support for OpenSlides?\n"
-"          Look at our <a href=\"https://openslides.com\">service page</a> and request our\n"
-"          contact person:"
-msgstr ""
-
-#: home.html:102
-msgid "all references"
-msgstr ""
-
-#: home.html:471
-msgid "and"
-msgstr ""
-
-#: press.html:82
-msgid "domainFACTORY readers choice for the best Open Source Software"
-msgstr ""
-
-#: home.html:348
-#: home.html:374
-msgid "install instructions"
-msgstr ""
-
-#: press.html:70
-#: press.html:75
-#: press.html:81
-#: press.html:83
-msgid "more"
-msgstr ""
-
-#: home.html:32
-msgid "released"
+#: home.html:166
+msgid "We look forward to hearing from you!"
 msgstr ""

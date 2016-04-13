@@ -1,0 +1,96 @@
+/* styles for openslides.org  */
+
+
+/* ======= Header ======= */
+
+.header {
+    background: rgba(255,255,255,0.95) !important;
+    -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+}
+.header .main-nav .nav .nav-item a {
+    color: #002c42;
+}
+.header .main-nav .nav .nav-item a.crosspromotion {
+    color: #fff;
+    padding: 25px 10px 15px 10px;
+}
+.header .main-nav .nav .nav-item a:hover.crosspromotion {
+    color: #55bfdf;
+}
+.header .main-nav button {
+    background-color: #2d7798 !important;
+    color: #fff !important;
+}
+.header .main-nav button:hover, .header .main-nav button.active {
+    background-color: #002c42 !important;
+    color: #fff !important;
+}
+
+/* ======= promo section ======= */
+
+.promo {
+    background: url("../img/bg-assembly.jpg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #002b43;
+}
+.promo h1 {
+    font-size: 80px;
+    color: #002b43;
+}
+.promo .btn-primary {
+    background-color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 100px;
+}
+.promo .btn-primary:hover {
+    background-color: #55bfdf;
+}
+
+/* ======= services section ======= */
+.photo {
+    width: 600px;
+    overflow: hidden;
+}
+
+/* ======= reference carousel ======= */
+.carousel {
+    background: transparent;
+    border: none;
+}
+.carousel-indicators {
+    bottom: 0;
+}
+.carousel-indicators li:hover {
+    background-color: #b8b8b8;
+}
+.carousel-indicators li {
+    border-color: #b8b8b8;
+}
+.carousel img {
+    max-height: 150px;
+    width: auto;
+}
+blockquote {
+    border-left: none;
+    text-align: left;
+}
+blockquote footer {
+    color: #e7f0f4;
+}
+
+.photo {
+    width: 100%;
+}
+
+@media (max-width: 767px) {
+    /* misc */
+    .hide-sm {
+        display: none;
+    }
+    .navbar-collapse a.crosspromotion {
+        background-color: #002b43 !important;
+    }
+}

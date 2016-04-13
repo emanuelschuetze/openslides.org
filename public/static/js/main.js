@@ -71,8 +71,8 @@ angular.module('openslides-website', [
                 var current = gettextCatalog.getCurrentLanguage();
                 // Define here new languages...
                 var languages = [
-                    { code: 'en', name: gettext('English') },
-                    { code: 'de', name: gettext('German') }
+                    { code: 'en', name: 'English' },
+                    { code: 'de', name: 'Deutsch' }
                 ];
                 angular.forEach(languages, function (language) {
                     if (language.code == current)
